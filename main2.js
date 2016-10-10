@@ -26,9 +26,6 @@ console.assert(pluck(stooges, 'age')[2] === 60)
 // item is **not** inserted into the new collection,
 // otherwise it is.
 // -----------
-function reject(list, predicate) {
-    // YOUR CODE HERE
-}
 
 function reject(list, predicate){
     var newArray = [];
