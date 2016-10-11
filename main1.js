@@ -62,14 +62,14 @@ console.assert(squares[3] === 16)
 // ----------------------------
 
 function filter(array, callback){
-    var newArray = [];
-    forEach(array, function(element){
+    return reduce(array, function(total, element){
         if (callback(element)){
-            newArray.push(element);
-
+            total.push(element);
+            return total;
+        } else {
+            return total;
         }
-    })
-    return newArray;
+    }, []);
 }
 
 // tests
